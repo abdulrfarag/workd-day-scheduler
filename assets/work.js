@@ -10,3 +10,10 @@ function runClock() {
   }, 1000);
 }
 // loop over time
+const hoursToDisplay = ["09", "10", "11", "12", "13", "14", "15", "16", "17"];
+// currentHour = 11;
+
+currentHour = new Date().getHours();
+for (let index = 0; index < hoursToDisplay.length; index++) {
+  const element = hoursToDisplay[index];
+
