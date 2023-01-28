@@ -41,3 +41,13 @@ function getClass(hour) {
   else return "past";
 }
 
+const buttonCollection = document.querySelectorAll(".saveBtn");
+const buttonArray = Array.from(buttonCollection);
+// listen for save button clicks
+buttonArray.forEach((button) => {
+  button.addEventListener("click", () => {
+    const text = button.previousElementSibling.value;
+    buttonHour = button.dataset.hour;
+    localStorage.setItem(buttonHour, text);
+  });
+});
