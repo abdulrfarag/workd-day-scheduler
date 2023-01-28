@@ -17,3 +17,18 @@ currentHour = new Date().getHours();
 for (let index = 0; index < hoursToDisplay.length; index++) {
   const element = hoursToDisplay[index];
 
+  //create timeblocks
+  var block = document.createElement("div");
+  block.classList.add("row", "time-block");
+  block.innerHTML = `
+<div class="col-sm-12 col-md-1 hour">${element}:00</div>
+        <textarea class="${getClass(
+          element
+        )} col-sm-12 col-md-10 description">${
+    localStorage.getItem(element) || ""
+  }</textarea>
+        <button data-hour=${element} class="btn saveBtn col-sm-12 col-md-1"><i class="fas fa-save"></i></button>
+`;
+  container.append(block);
+}
+
