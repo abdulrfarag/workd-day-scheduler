@@ -31,4 +31,13 @@ for (let index = 0; index < hoursToDisplay.length; index++) {
 `;
   container.append(block);
 }
+// check if we past this time
+function getClass(hour) {
+  hourNum = parseInt(hour);
+
+  if (currentHour < hour) {
+    return "future";
+  } else if (currentHour == hour) return "present";
+  else return "past";
+}
 
