@@ -4,7 +4,7 @@ The following picture of application:
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/Screenshot%202023-01-28%20134118.png)
 
 ## repo
-
+https://github.com/abdulrfarag/workd-day-scheduler
 
 
 ## link to the webpage 
